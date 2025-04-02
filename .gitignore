@@ -1,32 +1,41 @@
-# Python
+# Byte-compiled / cache files
 *.pyc
 *~
-__pycache__
+__pycache__/
 
-# Env
-.env
-myvenv/
+# Virtual environment
 venv/
+myvenv/
+env/
 
-# Database
+# Django database
 db.sqlite3
+db.sqlite3-journal
 
-# Static folder at project root
+# Static and media files
 /static/
+/media/
 
-# macOS
+# Environment variables
+.env
+
+# macOS system files
 ._*
 .DS_Store
 .fseventsd
 .Spotlight-V100
 
-# Windows
+# Windows system files
 Thumbs.db*
 ehthumbs*.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# Visual Studio
+# PyCharm-specific files and folders
+.idea/
+*.iml
+
+# Visual Studio Code
 .vscode/
 .history/
 *.code-workspace

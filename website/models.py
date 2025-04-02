@@ -1,4 +1,4 @@
-from django.conf import settings
+# from django.conf import settings
 from django.db import models
 from django.utils import timezone
 from dateutil.relativedelta import relativedelta
@@ -10,7 +10,7 @@ class Student(models.Model):
     Department = models.TextField()
     phone_number = models.IntegerField()
     DOB = models.DateField()
-    age = models.IntegerField()
+    # age = models.IntegerField()
 
     def calculate_age(self):
         self.age=relativedelta(timezone.now().date(), self.DOB).years
